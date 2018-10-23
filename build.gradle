@@ -1,0 +1,27 @@
+task wrapper(type: Wrapper) {
+	gradleVersion = '3.1'
+}
+
+allprojects {
+	group = 'vn.khanhpdt.playgrounds.datastructures-algorithms'
+	version = '1.0-SNAPSHOT'
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'idea'
+
+	repositories {
+		mavenCentral()
+	}
+
+	apply plugin: 'maven-publish'
+
+	publishing {
+		publications {
+			maven(MavenPublication) {
+				from components.java
+			}
+		}
+	}
+}
