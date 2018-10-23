@@ -1,6 +1,8 @@
-# Implementations of well-known data structures and algorithms in Java
+# About
 
-## Data structures
+Implementations of well-known data structures and algorithms in Java
+
+# Data structures
 
 - Arrays
 - Linked lists
@@ -22,7 +24,7 @@
 - Graphs
 - Disjoint sets
 
-## Algorithms
+# Algorithms
 
 - Sorting
     - Selection sort
@@ -52,7 +54,7 @@
         - Topological-sort-based algorithm for DAGs
         - Dijkstra algorithm
 
-## References
+# References
 
 1. Introduction to algorithms, 3rd
 2. Algorithms, 4th
