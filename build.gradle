@@ -1,7 +1,3 @@
-task wrapper(type: Wrapper) {
-	gradleVersion = '3.1'
-}
-
 allprojects {
 	group = 'vn.khanhpdt.playgrounds.datastructures-algorithms'
 	version = '1.0-SNAPSHOT'
