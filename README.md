@@ -1,3 +1,5 @@
+![Java CI with Gradle](https://github.com/khanhpdt/dsalgs-java/actions/workflows/gradle.yml/badge.svg)
+
 # About
 
 Implementations of various data structures and algorithms in Java, Python, and Go.
