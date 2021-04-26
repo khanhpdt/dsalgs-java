@@ -1,6 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.linkedlists;
 
-import org.apache.commons.collections4.CollectionUtils;
 import org.junit.Test;
 import vn.khanhpdt.playgrounds.datastructures.TestUtils;
 import vn.khanhpdt.playgrounds.datastructures.nodes.DoublyLinkedNode;
@@ -20,73 +19,77 @@ import static org.hamcrest.core.IsNull.nullValue;
  */
 public class DoublyLinkedListTest {
 
-	@Test
-	public void testInsert() throws Exception {
-		DoublyLinkedList<UUID, Integer> linkedList = new DoublyLinkedList<>();
+    @Test
+    public void testInsert() {
+        DoublyLinkedList<UUID, Integer> linkedList = new DoublyLinkedList<>();
 
-		DoublyLinkedNode<UUID, Integer> firstInsertedNode = TestUtils.randomDoublyLinkedNode();
-		linkedList.insert(firstInsertedNode);
+        DoublyLinkedNode<UUID, Integer> firstInsertedNode = TestUtils.randomDoublyLinkedNode();
+        linkedList.insert(firstInsertedNode);
 
-		DoublyLinkedNode<UUID, Integer> secondInsertedNode = TestUtils.randomDoublyLinkedNode();
-		linkedList.insert(secondInsertedNode);
+        DoublyLinkedNode<UUID, Integer> secondInsertedNode = TestUtils.randomDoublyLinkedNode();
+        linkedList.insert(secondInsertedNode);
 
-		assertThat("last inserted node becomes the head", linkedList.getHead(), is(secondInsertedNode));
-		assertThat("head has no previous node", secondInsertedNode.getPrevious(), is(nullValue()));
+        assertThat("last inserted node becomes the head", linkedList.getHead(), is(secondInsertedNode));
+        assertThat("head has no previous node", secondInsertedNode.getPrevious(), is(nullValue()));
 
-		assertThat(secondInsertedNode.getNext(), is(firstInsertedNode));
-		assertThat(firstInsertedNode.getPrevious(), is(secondInsertedNode));
-	}
+        assertThat(secondInsertedNode.getNext(), is(firstInsertedNode));
+        assertThat(firstInsertedNode.getPrevious(), is(secondInsertedNode));
+    }
 
-	@Test
-	public void testRemoveFirstNodes() throws Exception {
-		testRemoveAt(0, 1);
-	}
+    @Test
+    public void testRemoveFirstNodes() {
+        testRemoveAt(0, 1);
+    }
 
-	@Test
-	public void testRemoveConsecutiveNodes() throws Exception {
-		testRemoveAt(3, 4, 5, 6);
-	}
+    @Test
+    public void testRemoveConsecutiveNodes() {
+        testRemoveAt(3, 4, 5, 6);
+    }
 
-	private void testRemoveAt(int... indexes) throws Exception {
-		List<DoublyLinkedNode<UUID, Integer>> nodes = TestUtils.randomDoublyNodes(10);
-		UUID removeKey = UUID.randomUUID();
-		Random random = new Random();
-		for (int index : indexes) {
-			nodes.add(index, DoublyLinkedNode.from(removeKey, random.nextInt()));
-		}
-		DoublyLinkedList<UUID, Integer> linkedList = DoublyLinkedList.from(nodes);
+    private void testRemoveAt(int... indexes) {
+        List<DoublyLinkedNode<UUID, Integer>> nodes = TestUtils.randomDoublyNodes(10);
+        UUID removeKey = UUID.randomUUID();
+        Random random = new Random();
+        for (int index : indexes) {
+            nodes.add(index, DoublyLinkedNode.from(removeKey, random.nextInt()));
+        }
+        DoublyLinkedList<UUID, Integer> linkedList = DoublyLinkedList.from(nodes);
 
-		linkedList.remove(removeKey);
+        linkedList.remove(removeKey);
 
-		CollectionUtils.filter(nodes, n -> !n.getKey().equals(removeKey));
-		assertThat("nodes are removed and forward links are set correctly",
-				linkedList.traverse(), contains(nodes.toArray()));
+        // remove to compare
+        nodes.removeIf(n -> n.getKey().equals(removeKey));
 
-		Collections.reverse(nodes);
-		assertThat("nodes are removed and backward links are set correctly",
-				linkedList.traverseBackward(), contains(nodes.toArray()));
-	}
+        assertThat("nodes are removed and forward links are set correctly",
+                linkedList.traverse(), contains(nodes.toArray()));
 
-	@Test
-	public void testRemoveLastNodes() throws Exception {
-		List<DoublyLinkedNode<UUID, Integer>> nodes = TestUtils.randomDoublyNodes(10);
+        Collections.reverse(nodes);
+        assertThat("nodes are removed and backward links are set correctly",
+                linkedList.traverseBackward(), contains(nodes.toArray()));
+    }
 
-		UUID removeKey = UUID.randomUUID();
-		Random random = new Random();
-		nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
-		nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
-		nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
+    @Test
+    public void testRemoveLastNodes() {
+        List<DoublyLinkedNode<UUID, Integer>> nodes = TestUtils.randomDoublyNodes(10);
 
-		DoublyLinkedList<UUID, Integer> linkedList = DoublyLinkedList.from(nodes);
+        UUID removeKey = UUID.randomUUID();
+        Random random = new Random();
+        nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
+        nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
+        nodes.add(DoublyLinkedNode.from(removeKey, random.nextInt()));
 
-		linkedList.remove(removeKey);
+        DoublyLinkedList<UUID, Integer> linkedList = DoublyLinkedList.from(nodes);
 
-		CollectionUtils.filter(nodes, n -> !n.getKey().equals(removeKey));
-		assertThat("nodes are removed and forward links are set correctly",
-				linkedList.traverse(), contains(nodes.toArray()));
+        linkedList.remove(removeKey);
 
-		Collections.reverse(nodes);
-		assertThat("nodes are removed and backward links are set correctly",
-				linkedList.traverseBackward(), contains(nodes.toArray()));
-	}
+        // remove to compare
+        nodes.removeIf(n -> n.getKey().equals(removeKey));
+
+        assertThat("nodes are removed and forward links are set correctly",
+                linkedList.traverse(), contains(nodes.toArray()));
+
+        Collections.reverse(nodes);
+        assertThat("nodes are removed and backward links are set correctly",
+                linkedList.traverseBackward(), contains(nodes.toArray()));
+    }
 }
