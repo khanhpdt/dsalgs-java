@@ -10,7 +10,9 @@ class HeapSort<T extends Comparable<T>> implements ComparisonSort<T> {
 
 	@Override
 	public void sort(T[] items) {
-		BinaryMaxHeap heap = new BinaryMaxHeap<>(Arrays.asList(items), T::compareTo);
+		// build heap from items which will be changed in-place to support the heap property
+		BinaryMaxHeap<T> heap = new BinaryMaxHeap<>(Arrays.asList(items), T::compareTo);
+
 		for (int i = items.length - 1; i > 0; i--) {
 			// move the largest element (at index 0) to the tail
 			swap(items, 0, i);
