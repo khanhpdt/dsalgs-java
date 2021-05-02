@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.nodes;
 
-/**
- * @author khanhpdt
- */
 public class SinglyLinkedNode<K, V> implements ForwardLinked<SinglyLinkedNode<K, V>> {
 
 	private Node<K, V> content;

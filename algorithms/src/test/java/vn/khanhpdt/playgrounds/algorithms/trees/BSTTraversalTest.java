@@ -16,9 +16,6 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class BSTTraversalTest {
 
 	private static final List<Integer> IN_ORDER_INDEXES = Arrays.asList(4, 1, 7, 2, 5, 0, 3, 6);

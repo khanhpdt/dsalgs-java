@@ -7,9 +7,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.RedBlackTreeNullNode;
 import static java.awt.Color.BLACK;
 import static java.awt.Color.RED;
 
-/**
- * @author khanhpdt
- */
 class RedBlackTree<K, V extends Comparable<V>> extends BinarySearchTree<K, V> {
 
 	private RedBlackTreeNode<K, V> root = getNullNode();

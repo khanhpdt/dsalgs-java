@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 
 import vn.khanhpdt.playgrounds.datastructures.sets.DisjointSet;
 
-/**
- * @author khanhpdt
- */
 public class DisjointSetNode<K, V> implements ForwardLinked<DisjointSetNode<K, V>> {
 	
 	private Node<K, V> content;

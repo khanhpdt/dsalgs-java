@@ -18,9 +18,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.number.IsCloseTo.closeTo;
 
-/**
- * @author khanhpdt
- */
 public class ShortestPathTest {
 
 	private static final double DOUBLE_ERROR = 0.0001;

@@ -8,9 +8,6 @@ import java.util.Random;
 import java.util.UUID;
 import java.util.stream.IntStream;
 
-/**
- * @author khanhpdt
- */
 public class TestUtils {
 
 	private static final Random RANDOM = new Random();

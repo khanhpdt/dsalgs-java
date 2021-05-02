@@ -15,9 +15,6 @@ import java.util.UUID;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 @RunWith(Parameterized.class)
 public class HashTableTest {
 

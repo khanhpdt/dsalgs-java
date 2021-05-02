@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.algorithms.sortings;
 
-/**
- * @author khanhpdt
- */
 class MergeSort<T extends Comparable<T>> implements ComparisonSort<T> {
 
 	@Override

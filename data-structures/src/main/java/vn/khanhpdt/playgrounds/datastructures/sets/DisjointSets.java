@@ -4,9 +4,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.DisjointSetNode;
 
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class DisjointSets {
 
 	private DisjointSets() {

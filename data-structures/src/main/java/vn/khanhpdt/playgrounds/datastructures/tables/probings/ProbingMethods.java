@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.tables.probings;
 
-/**
- * @author khanhpdt
- */
 public class ProbingMethods {
 
 	public static <K> ProbingMethod create(ProbingMethodName probingMethodName, K key, int nSlots) {

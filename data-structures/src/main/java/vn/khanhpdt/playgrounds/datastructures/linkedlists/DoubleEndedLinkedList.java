@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.SinglyLinkedNode;
 
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class DoubleEndedLinkedList<N extends ForwardLinked<N>> implements LinkedList<N> {
 
 	private N head;

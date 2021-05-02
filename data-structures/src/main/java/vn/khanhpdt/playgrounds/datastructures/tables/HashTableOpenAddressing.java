@@ -7,9 +7,6 @@ import vn.khanhpdt.playgrounds.datastructures.tables.probings.ProbingMethods;
 
 import java.util.Arrays;
 
-/**
- * @author khanhpdt
- */
 class HashTableOpenAddressing<K, V> extends HashTable<K, V> {
 
 	private Node<K, V>[] slots;

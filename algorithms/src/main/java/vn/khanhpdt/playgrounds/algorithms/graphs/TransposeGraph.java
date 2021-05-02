@@ -8,9 +8,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * @author khanhpdt
- */
 public class TransposeGraph {
 
 	public static <K, V> Graph<K, V> of(Graph<K, V> graph) {

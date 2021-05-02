@@ -14,9 +14,6 @@ import static org.hamcrest.collection.IsIterableContainingInOrder.contains;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.nullValue;
 
-/**
- * @author khanhpdt
- */
 public class DoublyLinkedListTest {
 
     @Test

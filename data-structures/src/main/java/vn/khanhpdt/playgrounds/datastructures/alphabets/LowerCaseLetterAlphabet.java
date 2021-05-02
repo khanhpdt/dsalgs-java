@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.alphabets;
 
-/**
- * @author khanhpdt
- */
 public class LowerCaseLetterAlphabet implements Alphabet<Character> {
 
 	public static final LowerCaseLetterAlphabet INSTANCE = new LowerCaseLetterAlphabet();

@@ -7,9 +7,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class BinarySearchTree<K, V extends Comparable<V>> {
 
 	private BinarySearchTreeNode<K, V> root;

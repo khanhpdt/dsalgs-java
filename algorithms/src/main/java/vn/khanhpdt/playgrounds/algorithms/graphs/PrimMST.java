@@ -8,9 +8,6 @@ import vn.khanhpdt.playgrounds.datastructures.queues.MinPriorityQueue;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class PrimMST<K, V> extends MinimumSpanningTree<K, V> {
 
 	public PrimMST(Graph<K, V> graph) {

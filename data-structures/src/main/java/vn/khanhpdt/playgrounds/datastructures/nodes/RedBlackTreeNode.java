@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 
 import java.awt.Color;
 
-/**
- * @author khanhpdt
- */
 public class RedBlackTreeNode<K, V extends Comparable<V>> extends BinarySearchTreeNode<K, V> {
 
 	private Color color;

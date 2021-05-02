@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.nodes;
 
-/**
- * @author khanhpdt
- */
 public class Node<K, V> {
 
 	private K key;

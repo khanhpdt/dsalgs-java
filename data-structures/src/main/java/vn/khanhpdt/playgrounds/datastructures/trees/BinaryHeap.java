@@ -6,9 +6,6 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author khanhpdt
- */
 public abstract class BinaryHeap<T> {
 
 	private List<T> nodes;

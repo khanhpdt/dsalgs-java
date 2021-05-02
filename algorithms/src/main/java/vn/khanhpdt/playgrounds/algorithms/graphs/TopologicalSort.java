@@ -7,9 +7,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class TopologicalSort<K, V> {
 
 	private Graph<K, V> graph;

@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.ForwardLinked;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class LinkedLists {
 
 	public static <N extends ForwardLinked<N>> List<N> traverse(LinkedList<N> linkedList) {

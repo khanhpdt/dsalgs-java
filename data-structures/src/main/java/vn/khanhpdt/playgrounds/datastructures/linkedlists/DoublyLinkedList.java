@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class DoublyLinkedList<K, V> implements LinkedList<DoublyLinkedNode<K, V>> {
 
 	private DoublyLinkedNode<K, V> head;

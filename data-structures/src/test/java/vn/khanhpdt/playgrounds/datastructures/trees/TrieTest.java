@@ -11,9 +11,6 @@ import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNull.nullValue;
 
-/**
- * @author khanhpdt
- */
 public class TrieTest {
 
 	private List<String> defaultKeys = Arrays.asList("by", "sea", "sells", "she", "shells", "the");

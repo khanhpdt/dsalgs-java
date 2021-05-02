@@ -4,9 +4,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.DoublyLinked;
 
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class Deque<N extends DoublyLinked<N>> extends Queue<N> {
 
 	public void enqueueFront(N node) {

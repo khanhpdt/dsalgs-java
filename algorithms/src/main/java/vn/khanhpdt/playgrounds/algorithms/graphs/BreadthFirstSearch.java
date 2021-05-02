@@ -6,9 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.queues.Queue;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class BreadthFirstSearch<K, V> extends GraphSearch<K, V> {
 
 	@Override

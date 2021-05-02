@@ -12,9 +12,6 @@ import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsInstanceOf.instanceOf;
 import static org.hamcrest.object.IsCompatibleType.typeCompatibleWith;
 
-/**
- * @author khanhpdt
- */
 public class ArrayTest {
 
 	@Test

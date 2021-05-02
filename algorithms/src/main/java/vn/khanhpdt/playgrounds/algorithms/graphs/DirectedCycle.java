@@ -3,9 +3,6 @@ package vn.khanhpdt.playgrounds.algorithms.graphs;
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 
-/**
- * @author khanhpdt
- */
 public class DirectedCycle<K, V> {
 
 	private boolean exists;

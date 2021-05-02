@@ -10,9 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * @author khanhpdt
- */
 public abstract class SingleSourceShortestPath<K, V> {
 
 	protected final Graph<K, V> graph;

@@ -3,9 +3,6 @@ package vn.khanhpdt.playgrounds.algorithms.sortings;
 import java.util.Arrays;
 import java.util.function.Function;
 
-/**
- * @author khanhpdt
- */
 class RadixSort implements IntegerSort {
 
 	/**

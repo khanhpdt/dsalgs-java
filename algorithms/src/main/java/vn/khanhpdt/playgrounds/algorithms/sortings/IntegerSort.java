@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.algorithms.sortings;
 
-/**
- * @author khanhpdt
- */
 interface IntegerSort {
 
 	/**

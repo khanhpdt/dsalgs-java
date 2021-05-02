@@ -1,8 +1,5 @@
 package vn.khanhpdt.playgrounds.datastructures.tables.probings;
 
-/**
- * @author khanhpdt
- */
 class LinearProbing<K> implements ProbingMethod {
 
 	private final int nSlots;

@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructures.graphs;
 
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 
-/**
- * @author khanhpdt
- */
 public class GraphEdge<K, V> {
 
 	private GraphVertex<K, V> fromVertex;

@@ -10,9 +10,6 @@ import java.util.UUID;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * @author khanhpdt
- */
 public class StronglyConnectedComponents {
 
 	public static <K, V> List<Graph<K, V>> of(Graph<K, V> graph) {

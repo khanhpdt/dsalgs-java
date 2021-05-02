@@ -3,9 +3,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-/**
- * @author khanhpdt
- */
 public class BinarySearchTreeNode<K, V extends Comparable<V>> extends BinaryTreeNode<K, V> {
 
 	BinarySearchTreeNode(Node<K, V> nodeContent) {

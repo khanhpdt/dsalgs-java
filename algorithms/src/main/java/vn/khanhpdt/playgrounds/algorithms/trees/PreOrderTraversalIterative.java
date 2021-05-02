@@ -6,9 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.stacks.Stack;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class PreOrderTraversalIterative {
 
 	public static <K, V extends Comparable<V>> List<BinaryTreeNode<K, V>> traverse(BinaryTreeNode<K, V> sourceNode) {

@@ -6,9 +6,6 @@ import java.util.Arrays;
 
 import static vn.khanhpdt.playgrounds.datastructuresalgorithms.commons.Commons.swap;
 
-/**
- * @author khanhpdt
- */
 class HeapSort<T extends Comparable<T>> implements ComparisonSort<T> {
 
 	@Override

@@ -3,9 +3,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 import java.awt.Color;
 import java.util.UUID;
 
-/**
- * @author khanhpdt
- */
 public class RedBlackTreeNullNode extends RedBlackTreeNode {
 
 	private static final RedBlackTreeNullNode INSTANCE = new RedBlackTreeNullNode(new Node<>(UUID.randomUUID()));

@@ -6,9 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public abstract class GraphSearch<K, V> {
 
 	protected int time = 1;

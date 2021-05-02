@@ -6,9 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.stacks.Stack;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class DepthFirstSearchIterative<K, V> extends GraphSearch<K, V> {
 
 	@Override

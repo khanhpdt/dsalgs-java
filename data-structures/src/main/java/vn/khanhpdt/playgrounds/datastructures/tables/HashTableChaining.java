@@ -6,9 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.SinglyLinkedNode;
 
 import java.util.function.Function;
 
-/**
- * @author khanhpdt
- */
 public class HashTableChaining<K, V> extends HashTable<K, V> {
 
 	private final Function<K, Integer> hashFunction;

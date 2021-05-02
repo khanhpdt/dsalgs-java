@@ -12,9 +12,6 @@ import static java.awt.Color.RED;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class RedBlackTreeTest {
 
 	private static final Random RANDOM = new Random();

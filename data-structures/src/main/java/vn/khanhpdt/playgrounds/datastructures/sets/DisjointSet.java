@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.DisjointSetNode;
 
 import java.util.UUID;
 
-/**
- * @author khanhpdt
- */
 public class DisjointSet<K, V> {
 
 	private UUID key;

@@ -13,9 +13,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-/**
- * @author khanhpdt
- */
 public class KruskalMST<K, V> extends MinimumSpanningTree<K, V> {
 
 	public KruskalMST(Graph<K, V> graph) {

@@ -16,9 +16,6 @@ import java.util.stream.IntStream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-/**
- * @author khanhpdt
- */
 public class MinimumSpanningTreeTest {
 
     @Test

@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructuresalgorithms.commons;
 
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public abstract class Commons {
 
 	public static <T> void swap(T[] elements, int i, int j) {

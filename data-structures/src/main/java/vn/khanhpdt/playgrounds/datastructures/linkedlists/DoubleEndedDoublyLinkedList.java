@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructures.linkedlists;
 
 import vn.khanhpdt.playgrounds.datastructures.nodes.DoublyLinked;
 
-/**
- * @author khanhpdt
- */
 public class DoubleEndedDoublyLinkedList<N extends DoublyLinked<N>> implements LinkedList<N> {
 
 	private N head;

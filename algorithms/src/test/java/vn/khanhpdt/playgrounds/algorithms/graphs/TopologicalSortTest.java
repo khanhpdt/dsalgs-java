@@ -9,9 +9,6 @@ import java.util.stream.IntStream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class TopologicalSortTest {
 
 	@Test

@@ -4,9 +4,6 @@ import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 import vn.khanhpdt.playgrounds.datastructures.queues.MinPriorityQueue;
 
-/**
- * @author khanhpdt
- */
 public class DijkstraShortestPath<K, V> extends SingleSourceShortestPath<K, V> {
 
 	public DijkstraShortestPath(Graph<K, V> graph, GraphVertex<K, V> source) {

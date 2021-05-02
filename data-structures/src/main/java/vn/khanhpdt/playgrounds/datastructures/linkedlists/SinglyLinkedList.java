@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.ForwardLinked;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class SinglyLinkedList<N extends ForwardLinked<N>> implements LinkedList<N> {
 
 	private N head;

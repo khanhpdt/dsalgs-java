@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public class DepthFirstSearchRecursive<K, V> extends GraphSearch<K, V> {
 
 	@Override

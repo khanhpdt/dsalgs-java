@@ -5,9 +5,6 @@ import vn.khanhpdt.playgrounds.datastructures.trees.BinaryHeap;
 import java.util.Comparator;
 import java.util.List;
 
-/**
- * @author khanhpdt
- */
 public abstract class PriorityQueue<T> {
 
 	void swapNodes(int i1, int i2) {

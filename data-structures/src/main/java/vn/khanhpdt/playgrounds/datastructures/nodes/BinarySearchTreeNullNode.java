@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 
 import java.util.UUID;
 
-/**
- * @author khanhpdt
- */
 public class BinarySearchTreeNullNode extends BinarySearchTreeNode {
 
 	private static final BinarySearchTreeNullNode INSTANCE = new BinarySearchTreeNullNode(new Node<>(UUID.randomUUID()));
