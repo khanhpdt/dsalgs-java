@@ -8,7 +8,10 @@ class SelectionSort<T extends Comparable<T>> implements ComparisonSort<T> {
 	@Override
 	public void sort(T[] items) {
 		for (int i = 0; i < items.length; i++) {
+			// select the minimum from i to the end of the array
 			int minIndex = findIndexOfMinimum(items, i);
+
+			// move that minimum item to the end of the already sorted part of the array (i.e., [0, i-1])
 			exchangeElements(items, i, minIndex);
 		}
 	}
