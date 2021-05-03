@@ -27,18 +27,21 @@ class CountingSort implements IntegerSort {
 		validate(keys);
 
 		int max = Arrays.stream(keys).max().getAsInt();
+		int min = Arrays.stream(keys).min().getAsInt();
 
 		// count the number of the keys smaller than or equal to a given key
-		int[] lessThanOrEqualCounts = new int[max + 1];
+		int[] lessThanOrEqualCounts = new int[max - min + 1];
 		for (int key : keys) {
-			lessThanOrEqualCounts[key]++;
+			// first, count equal
+			lessThanOrEqualCounts[key - min]++;
 		}
 		for (int i = 1; i < lessThanOrEqualCounts.length; i++) {
+			// then, plus less than keys
 			lessThanOrEqualCounts[i] += lessThanOrEqualCounts[i - 1];
 		}
 
-		// TODO sort in-place
-		int[] result = new int[keys.length];
+		int[] result = new int[items.length];
+
 		// go backward to achieve stability
 		for (int i = items.length - 1; i >= 0; i--) {
 			int element = items[i];
@@ -46,11 +49,11 @@ class CountingSort implements IntegerSort {
 
 			// because of the counting, we're sure that the keys less than or equal to this key
 			// will be placed before this position.
-			int position = lessThanOrEqualCounts[key] - 1;
+			int position = lessThanOrEqualCounts[key - min] - 1;
 			result[position] = element;
 
-			// place the other keys equal to this element before this element
-			lessThanOrEqualCounts[key]--;
+			// place the other keys equal to this element before this element to preserve stability
+			lessThanOrEqualCounts[key - min]--;
 		}
 
 		return result;
