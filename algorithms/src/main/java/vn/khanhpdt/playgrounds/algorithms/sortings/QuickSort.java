@@ -19,6 +19,14 @@ class QuickSort<T extends Comparable<T>> implements ComparisonSort<T> {
 		doSort(elements, pivotIndex + 1, end);
 	}
 
+	/**
+	 * Partition the given elements into three parts: subarray1, the pivot element, subarray2, where
+	 * elements in subarray1 <= the pivot element < elements in subarray2.
+	 *
+	 * The input array is changed in-place.
+	 *
+	 * @return the index of the pivot element
+	 */
 	private int partition(T[] elements, int start, int end) {
 		// use the last element as the pivot
 		T pivot = elements[end];
