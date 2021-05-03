@@ -4,6 +4,7 @@ class MergeSort<T extends Comparable<T>> implements ComparisonSort<T> {
 
 	@Override
 	public void sort(T[] items) {
+		// allocate an auxiliary array once here to avoid allocating multiple arrays during the merge operation
 		T[] auxiliary = items.clone();
 		doSort(items, auxiliary, 0, items.length - 1);
 	}
@@ -22,33 +23,33 @@ class MergeSort<T extends Comparable<T>> implements ComparisonSort<T> {
 	private void merge(T[] elements, T[] auxiliary, int start, int mid, int end) {
 		System.arraycopy(elements, start, auxiliary, start, end + 1 - start);
 
-		int indexFirst = start;
-		int indexSecond = mid + 1;
+		int firstSubArrayIdx = start;
+		int secondSubArrayIdx = mid + 1;
 
-		int indexResult = start;
-		while (indexResult < end) {
-			if (auxiliary[indexFirst].compareTo(auxiliary[indexSecond]) <= 0) {
-				elements[indexResult] = auxiliary[indexFirst];
-				indexFirst++;
+		int resultIdx = start;
+		while (resultIdx < end) {
+			if (auxiliary[firstSubArrayIdx].compareTo(auxiliary[secondSubArrayIdx]) <= 0) {
+				elements[resultIdx] = auxiliary[firstSubArrayIdx];
+				firstSubArrayIdx++;
 			} else {
-				elements[indexResult] = auxiliary[indexSecond];
-				indexSecond++;
+				elements[resultIdx] = auxiliary[secondSubArrayIdx];
+				secondSubArrayIdx++;
 			}
 
-			indexResult++;
+			resultIdx++;
 
 			// all elements in the first subarray are merged
-			if (indexFirst >= mid + 1) {
+			if (firstSubArrayIdx >= mid + 1) {
 				// copy all the remaining elements in the second subarray
-				System.arraycopy(auxiliary, indexSecond, elements, indexResult, end - indexSecond + 1);
-				indexResult = end + 1;
+				System.arraycopy(auxiliary, secondSubArrayIdx, elements, resultIdx, end - secondSubArrayIdx + 1);
+				resultIdx = end + 1;
 			}
 
 			// all elements in the second subarray are merged
-			if (indexSecond >= end + 1) {
+			if (secondSubArrayIdx >= end + 1) {
 				// copy all the remaining elements in the first subarray
-				System.arraycopy(auxiliary, indexFirst, elements, indexResult, mid - indexFirst + 1);
-				indexResult = end + 1;
+				System.arraycopy(auxiliary, firstSubArrayIdx, elements, resultIdx, mid - firstSubArrayIdx + 1);
+				resultIdx = end + 1;
 			}
 		}
 	}
