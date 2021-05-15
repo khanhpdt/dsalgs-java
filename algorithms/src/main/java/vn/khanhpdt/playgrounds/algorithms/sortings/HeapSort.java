@@ -4,7 +4,7 @@ import vn.khanhpdt.playgrounds.datastructures.trees.BinaryMaxHeap;
 
 import java.util.Arrays;
 
-import static vn.khanhpdt.playgrounds.datastructuresalgorithms.commons.Commons.swap;
+import static vn.khanhpdt.playgrounds.algorithms.Commons.swap;
 
 class HeapSort<T extends Comparable<T>> implements ComparisonSort<T> {
 

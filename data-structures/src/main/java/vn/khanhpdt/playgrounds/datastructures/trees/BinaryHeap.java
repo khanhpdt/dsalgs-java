@@ -1,6 +1,6 @@
 package vn.khanhpdt.playgrounds.datastructures.trees;
 
-import vn.khanhpdt.playgrounds.datastructuresalgorithms.commons.Commons;
+import vn.khanhpdt.playgrounds.datastructures.Commons;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,0 +1,56 @@
+package vn.khanhpdt.playgrounds.ctci.stacksandqueues;
+
+import vn.khanhpdt.playgrounds.datastructures.nodes.SinglyLinkedNode;
+import vn.khanhpdt.playgrounds.datastructures.stacks.Stack;
+
+import java.util.UUID;
+
+/**
+ * Problem 3.6
+ *
+ * @author khanhpdt
+ */
+public class SortByTwoStacks {
+
+	private Stack<SinglyLinkedNode<UUID, Integer>> sortedStack;
+
+	private Stack<SinglyLinkedNode<UUID, Integer>> stack;
+
+	public SortByTwoStacks(Stack<SinglyLinkedNode<UUID, Integer>> stack) {
+		this.stack = stack;
+		this.sortedStack = new Stack<>();
+
+		sort();
+	}
+
+	private void sort() {
+		while (!stack.isEmpty()) {
+			SinglyLinkedNode<UUID, Integer> nodeToSort = stack.pop();
+
+			// find the right place to insert the node to the sorted stack. the idea is similar to insertion sort.
+			while (true) {
+				SinglyLinkedNode<UUID, Integer> sortedCurrent = sortedStack.peek();
+				// sorted stack is empty
+				if (sortedCurrent == null) {
+					sortedStack.push(nodeToSort);
+					break;
+				}
+				// biggest items on top
+				else if (nodeToSort.getValue().compareTo(sortedCurrent.getValue()) >= 0) {
+					sortedStack.push(nodeToSort);
+					break;
+				}
+				else {
+					// checking the next node in the sorted stack.
+					// however, we need to save the current node to find the right position for it later.
+					// note that we are allowed to use only two stacks to do the sort.
+					stack.push(sortedStack.pop());
+				}
+			}
+		}
+	}
+
+	public Stack<SinglyLinkedNode<UUID, Integer>> get() {
+		return sortedStack;
+	}
+}

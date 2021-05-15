@@ -1,4 +1,4 @@
-package vn.khanhpdt.playgrounds.datastructuresalgorithms.commons;
+package vn.khanhpdt.playgrounds.algorithms;
 
 import java.util.List;
 

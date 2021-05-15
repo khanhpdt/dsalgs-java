@@ -1,6 +1,6 @@
 package vn.khanhpdt.playgrounds.algorithms.sortings;
 
-import static vn.khanhpdt.playgrounds.datastructuresalgorithms.commons.Commons.swap;
+import static vn.khanhpdt.playgrounds.algorithms.Commons.swap;
 
 class QuickSort<T extends Comparable<T>> implements ComparisonSort<T> {
 
