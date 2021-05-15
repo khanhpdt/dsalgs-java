@@ -78,7 +78,7 @@ public class DoublyLinkedList<K, V> implements LinkedList<DoublyLinkedNode<K, V>
 		return result;
 	}
 
-	public DoublyLinkedList reverse() {
+	public DoublyLinkedList<K, V> reverse() {
 		DoublyLinkedNode<K, V> current = this.head;
 
 		// reset this list
