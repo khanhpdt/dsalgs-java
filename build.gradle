@@ -1,5 +1,5 @@
 allprojects {
-	group = 'vn.khanhpdt.playgrounds.datastructures-algorithms'
+	group = 'vn.khanhpdt'
 	version = '1.0-SNAPSHOT'
 }
 

@@ -6,9 +6,8 @@ import vn.khanhpdt.playgrounds.datastructures.stacks.Stack;
 import java.util.UUID;
 
 /**
- * Problem 3.5
+ * Problem 3.5: Implement a queue using two stacks.
  *
- * @author khanhpdt
  */
 public class QueueByTwoStacks {
 
