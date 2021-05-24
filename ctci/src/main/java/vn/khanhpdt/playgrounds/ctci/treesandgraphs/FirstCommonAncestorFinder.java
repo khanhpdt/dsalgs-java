@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.ctci.treesandgraphs;
 
 import vn.khanhpdt.playgrounds.datastructures.nodes.BinaryTreeNode;
 
-/**
- * @author khanhpdt
- */
 class FirstCommonAncestorFinder {
 
 	static <K, V extends Comparable<V>> BinaryTreeNode<K, V> find(BinaryTreeNode<K, V> firstNode,

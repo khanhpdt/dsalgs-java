@@ -11,7 +11,6 @@ import java.util.Map;
 /**
  * @param <K>  type of vertex key
  * @param <V>  type of vertex value
- * @author khanhpdt
  */
 public class GraphVertex<K, V> implements DoublyLinked<GraphVertex<K, V>> {
 

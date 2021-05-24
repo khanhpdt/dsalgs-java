@@ -3,7 +3,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
 /**
  * @param <K>  type of node key
  * @param <V>  type of node value
- * @author khanhpdt
  */
 public class DoublyLinkedNode<K, V> implements DoublyLinked<DoublyLinkedNode<K, V>> {
 

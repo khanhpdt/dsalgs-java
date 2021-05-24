@@ -6,7 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 /**
  * Algorithm to find shortest paths in a directed acyclic graph.
  *
- * @author khanhpdt
  */
 public class DAGShortestPath<K, V> extends SingleSourceShortestPath<K, V> {
 

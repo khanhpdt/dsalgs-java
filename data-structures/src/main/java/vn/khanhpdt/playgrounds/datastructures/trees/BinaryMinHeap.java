@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @param <T> node type
- * @author khanhpdt
  */
 public class BinaryMinHeap<T> extends BinaryHeap<T> {
 

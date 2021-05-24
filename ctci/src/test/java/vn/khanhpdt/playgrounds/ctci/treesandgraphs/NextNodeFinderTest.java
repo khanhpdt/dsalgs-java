@@ -12,9 +12,6 @@ import java.util.stream.Stream;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class NextNodeFinderTest {
 
 	private BinarySearchTree<UUID, Integer> bst;

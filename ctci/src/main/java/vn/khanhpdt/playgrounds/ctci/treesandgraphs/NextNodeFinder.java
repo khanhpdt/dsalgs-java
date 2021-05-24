@@ -8,7 +8,6 @@ import vn.khanhpdt.playgrounds.datastructures.trees.BinarySearchTree;
  * Problem 4.6: Finds the next node of a given node in a binary search tree. The next node is the one next to the given
  * node in the in-order traversal.
  *
- * @author khanhpdt
  */
 class NextNodeFinder {
 

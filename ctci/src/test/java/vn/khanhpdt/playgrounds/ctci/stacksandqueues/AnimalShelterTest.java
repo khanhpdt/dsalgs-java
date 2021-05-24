@@ -11,9 +11,6 @@ import static org.hamcrest.core.IsNull.nullValue;
 import static vn.khanhpdt.playgrounds.ctci.stacksandqueues.AnimalShelter.AnimalType.CAT;
 import static vn.khanhpdt.playgrounds.ctci.stacksandqueues.AnimalShelter.AnimalType.DOG;
 
-/**
- * @author khanhpdt
- */
 public class AnimalShelterTest {
 
 	@Test

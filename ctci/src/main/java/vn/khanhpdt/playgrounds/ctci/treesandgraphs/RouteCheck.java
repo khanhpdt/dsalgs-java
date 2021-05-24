@@ -6,7 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.queues.Queue;
 /**
  * Problem 4.2: Checks if there is a route from a given node to another node in a directed graph.
  *
- * @author khanhpdt
  */
 class RouteCheck {
 

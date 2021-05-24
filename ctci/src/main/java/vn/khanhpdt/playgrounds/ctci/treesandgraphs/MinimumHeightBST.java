@@ -9,7 +9,6 @@ import java.util.UUID;
 /**
  * Problem 4.3: Creates a BST with minimum height from increasingly sorted array.
  *
- * @author khanhpdt
  */
 class MinimumHeightBST {
 

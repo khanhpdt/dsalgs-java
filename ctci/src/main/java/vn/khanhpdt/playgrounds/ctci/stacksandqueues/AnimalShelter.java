@@ -8,7 +8,6 @@ import java.util.UUID;
 /**
  * Problem 3.7
  *
- * @author khanhpdt
  */
 public class AnimalShelter {
 

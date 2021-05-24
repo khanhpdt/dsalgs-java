@@ -12,7 +12,6 @@ import java.util.List;
  * The added light edge is also called the safe edge.
  * </p>
  *
- * @author khanhpdt
  */
 public abstract class MinimumSpanningTree<K, V> {
 

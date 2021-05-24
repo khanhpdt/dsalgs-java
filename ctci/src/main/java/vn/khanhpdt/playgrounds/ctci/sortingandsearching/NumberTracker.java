@@ -6,7 +6,6 @@ import java.util.Map;
 /**
  * Problem 11.8
  *
- * @author khanhpdt
  */
 class NumberTracker {
 

@@ -6,7 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.trees.BinarySearchTree;
 /**
  * Problem 4.8: Checks if a tree is a subtree of another tree.
  *
- * @author khanhpdt
  */
 class SubtreeCheck {
 

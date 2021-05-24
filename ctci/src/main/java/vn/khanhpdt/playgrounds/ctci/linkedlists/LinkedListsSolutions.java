@@ -10,9 +10,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-/**
- * @author khanhpdt
- */
 class LinkedListsSolutions {
 
     /**

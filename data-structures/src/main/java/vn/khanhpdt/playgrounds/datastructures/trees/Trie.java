@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * @param <V>  type of the value associated with the key
  *
- * @author khanhpdt
  */
 public class Trie<V> {
 

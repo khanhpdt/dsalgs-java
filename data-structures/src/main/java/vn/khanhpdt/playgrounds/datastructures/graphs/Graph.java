@@ -9,7 +9,6 @@ import java.util.List;
 /**
  * @param <K>  type of vertex key
  * @param <V>  type of vertex value
- * @author khanhpdt
  */
 public class Graph<K, V> {
 

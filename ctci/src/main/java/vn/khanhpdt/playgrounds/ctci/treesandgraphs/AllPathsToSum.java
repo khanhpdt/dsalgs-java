@@ -12,7 +12,6 @@ import java.util.UUID;
 /**
  * Problem 4.9: Finds all paths whose sum is equal to the given sum.
  *
- * @author khanhpdt
  */
 class AllPathsToSum {
 

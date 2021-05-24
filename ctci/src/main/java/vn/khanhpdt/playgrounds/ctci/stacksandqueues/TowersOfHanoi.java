@@ -8,7 +8,6 @@ import java.util.*;
 /**
  * Problem 3.4
  *
- * @author khanhpdt
  */
 public class TowersOfHanoi {
 

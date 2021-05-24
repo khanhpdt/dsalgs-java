@@ -6,7 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.trees.BinarySearchTree;
 /**
  * Problem 4.1
  *
- * @author khanhpdt
  */
 class BalancedBinaryTreeCheck {
 

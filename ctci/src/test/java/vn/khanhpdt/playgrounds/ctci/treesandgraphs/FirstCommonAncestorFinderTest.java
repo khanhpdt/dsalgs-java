@@ -2,7 +2,6 @@ package vn.khanhpdt.playgrounds.ctci.treesandgraphs;
 
 import org.junit.Before;
 import org.junit.Test;
-import vn.khanhpdt.playgrounds.ctci.treesandgraphs.FirstCommonAncestorFinder;
 import vn.khanhpdt.playgrounds.datastructures.nodes.BinarySearchTreeNode;
 import vn.khanhpdt.playgrounds.datastructures.trees.BinarySearchTree;
 
@@ -12,9 +11,6 @@ import java.util.stream.Stream;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * @author khanhpdt
- */
 public class FirstCommonAncestorFinderTest {
 
 	private BinarySearchTree<UUID, Integer> bst;

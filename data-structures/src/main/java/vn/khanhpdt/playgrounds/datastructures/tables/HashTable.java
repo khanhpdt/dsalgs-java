@@ -2,12 +2,9 @@ package vn.khanhpdt.playgrounds.datastructures.tables;
 
 import vn.khanhpdt.playgrounds.datastructures.nodes.Node;
 
-import java.util.UUID;
-
 /**
  * @param <K>  type of item key
  * @param <V>  type of item value
- * @author khanhpdt
  */
 public abstract class HashTable<K, V> {
 

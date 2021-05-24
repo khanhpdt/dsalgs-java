@@ -3,7 +3,6 @@ package vn.khanhpdt.playgrounds.ctci.stacksandqueues;
 /**
  * Problem 3.1: Implement three stacks with a single array.
  *
- * @author khanhpdt
  */
 public class NStacksSingleArray {
 

@@ -7,7 +7,6 @@ import java.util.UUID;
 /**
  * Problem 4.5: Checks if a binary tree is a binary search tree.
  *
- * @author khanhpdt
  */
 class BSTCheck {
 

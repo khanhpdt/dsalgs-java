@@ -3,9 +3,6 @@ package vn.khanhpdt.playgrounds.ctci.bitmanipulation;
 import java.math.BigDecimal;
 import java.util.Arrays;
 
-/**
- * @author khanhpdt
- */
 class BitManipulationSolutions {
 
     /**

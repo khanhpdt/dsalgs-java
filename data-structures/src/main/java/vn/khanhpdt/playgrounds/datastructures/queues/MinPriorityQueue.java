@@ -13,7 +13,6 @@ import java.util.stream.IntStream;
 
 /**
  * @param <T> node type
- * @author khanhpdt
  */
 public class MinPriorityQueue<T> extends PriorityQueue<T> {
 

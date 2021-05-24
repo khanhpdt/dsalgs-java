@@ -6,7 +6,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 /**
  * Bellman-Ford algorithm to find single-source shortest paths.
  *
- * @author khanhpdt
  */
 public class BellmanFordShortestPath<K, V> extends SingleSourceShortestPath<K, V> {
 

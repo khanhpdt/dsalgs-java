@@ -27,9 +27,6 @@ import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.hamcrest.core.Is.is;
 import static org.hamcrest.core.IsNot.not;
 
-/**
- * @author khanhpdt
- */
 public class LinkedListsSolutionsTest {
 
 	private static final Random RANDOM = new Random();

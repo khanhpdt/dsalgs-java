@@ -2,9 +2,6 @@ package vn.khanhpdt.playgrounds.ctci.sortingandsearching;
 
 import java.util.*;
 
-/**
- * @author khanhpdt
- */
 class SortingAndSearchingSolutions {
 
 	/**

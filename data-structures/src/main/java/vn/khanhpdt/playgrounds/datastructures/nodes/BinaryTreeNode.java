@@ -4,7 +4,6 @@ package vn.khanhpdt.playgrounds.datastructures.nodes;
  * @param <K>  type of node key
  * @param <V>  type of node value
  *
- * @author khanhpdt
  */
 public class BinaryTreeNode<K, V extends Comparable<V>>
 		implements Comparable<BinaryTreeNode<K, V>>, ForwardLinked<BinaryTreeNode<K, V>> {

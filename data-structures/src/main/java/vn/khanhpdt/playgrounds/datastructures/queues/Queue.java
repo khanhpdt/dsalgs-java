@@ -7,7 +7,6 @@ import java.util.List;
 /**
  * An implementation of queues using linked lists.
  *
- * @author khanhpdt
  */
 public class Queue<N extends DoublyLinked<N>> {
 

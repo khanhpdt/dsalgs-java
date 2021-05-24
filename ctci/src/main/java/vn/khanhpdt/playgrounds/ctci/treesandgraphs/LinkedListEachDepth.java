@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * Problem 4.4: Create a linked list for each depth of a given binary tree
  *
- * @author khanhpdt
  */
 class LinkedListEachDepth {
 

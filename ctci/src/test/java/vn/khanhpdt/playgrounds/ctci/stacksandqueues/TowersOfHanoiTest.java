@@ -2,7 +2,6 @@ package vn.khanhpdt.playgrounds.ctci.stacksandqueues;
 
 import org.hamcrest.Matchers;
 import org.junit.Test;
-import vn.khanhpdt.playgrounds.ctci.stacksandqueues.TowersOfHanoi;
 import vn.khanhpdt.playgrounds.datastructures.nodes.SinglyLinkedNode;
 import vn.khanhpdt.playgrounds.datastructures.stacks.Stack;
 
@@ -11,9 +10,6 @@ import java.util.UUID;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class TowersOfHanoiTest {
 
 	@Test

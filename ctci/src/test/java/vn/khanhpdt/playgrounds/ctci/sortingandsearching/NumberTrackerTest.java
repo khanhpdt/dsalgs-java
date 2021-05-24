@@ -1,7 +1,6 @@
 package vn.khanhpdt.playgrounds.ctci.sortingandsearching;
 
 import org.junit.Test;
-import vn.khanhpdt.playgrounds.ctci.sortingandsearching.NumberTracker;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,9 +9,6 @@ import java.util.List;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-/**
- * @author khanhpdt
- */
 public class NumberTrackerTest {
 
 	private NumberTracker tracker = new NumberTracker();

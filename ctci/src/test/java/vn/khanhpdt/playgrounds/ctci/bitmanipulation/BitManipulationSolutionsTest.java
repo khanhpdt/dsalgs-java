@@ -9,9 +9,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static vn.khanhpdt.playgrounds.ctci.bitmanipulation.BitManipulationSolutions.*;
 
-/**
- * @author khanhpdt
- */
 public class BitManipulationSolutionsTest {
 
     @Test

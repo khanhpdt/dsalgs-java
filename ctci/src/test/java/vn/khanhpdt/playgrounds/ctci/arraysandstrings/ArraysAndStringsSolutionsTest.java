@@ -2,14 +2,10 @@ package vn.khanhpdt.playgrounds.ctci.arraysandstrings;
 
 import org.hamcrest.collection.IsArray;
 import org.junit.Test;
-import vn.khanhpdt.playgrounds.ctci.arraysandstrings.ArraysAndStringsSolutions;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * @author khanhpdt
- */
 public class ArraysAndStringsSolutionsTest {
 
 	@Test

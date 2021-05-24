@@ -4,7 +4,6 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.ForwardLinked;
 
 /**
  * @param <N> type of node
- * @author khanhpdt
  */
 public class Stack<N extends ForwardLinked<N>> {
 
