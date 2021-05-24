@@ -14,12 +14,12 @@ import java.util.Map;
  */
 public class GraphVertex<K, V> implements DoublyLinked<GraphVertex<K, V>> {
 
-	private Node<K, V> content;
+	private final Node<K, V> content;
 
 	private List<GraphVertex<K, V>> adjacents = new ArrayList<>();
 
 	// outgoing edges from this vertex
-	private Map<GraphVertex<K, V>, GraphEdge<K, V>> outgoingEdges = new HashMap<>();
+	private final Map<GraphVertex<K, V>, GraphEdge<K, V>> outgoingEdges = new HashMap<>();
 
 	// for searching (BFS, DFS)
 	private int distance = Integer.MAX_VALUE;

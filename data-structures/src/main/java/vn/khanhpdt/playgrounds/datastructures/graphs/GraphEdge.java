@@ -4,11 +4,11 @@ import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 
 public class GraphEdge<K, V> {
 
-	private GraphVertex<K, V> fromVertex;
+	private final GraphVertex<K, V> fromVertex;
 
-	private GraphVertex<K, V> toVertex;
+	private final GraphVertex<K, V> toVertex;
 
-	private double weight;
+	private final double weight;
 
 	public GraphEdge(GraphVertex<K, V> fromVertex, GraphVertex<K, V> toVertex, double weight) {
 		this.fromVertex = fromVertex;

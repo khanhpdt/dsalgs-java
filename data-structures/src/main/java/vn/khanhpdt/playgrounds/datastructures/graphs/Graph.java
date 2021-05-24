@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Graph<K, V> {
 
-	private List<GraphVertex<K, V>> vertices;
+	private final List<GraphVertex<K, V>> vertices;
 
 	public Graph() {
 		this.vertices = new ArrayList<>();
