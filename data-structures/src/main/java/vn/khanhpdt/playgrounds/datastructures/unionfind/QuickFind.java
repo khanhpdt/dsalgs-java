@@ -20,7 +20,7 @@ public class QuickFind extends UnionFind {
         // complexity: O(n)
         for (var i = 0; i < componentIds.length; i++) {
             // unite p's component and q's component.
-            // we can set both to p's component or q's component. here we set to p's.
+            // we can set both p's component or q's component to either p's component or q's component. here we set to p's.
             if (componentIds[i] == componentIds[q]) {
                 componentIds[i] = componentIds[p];
             }
