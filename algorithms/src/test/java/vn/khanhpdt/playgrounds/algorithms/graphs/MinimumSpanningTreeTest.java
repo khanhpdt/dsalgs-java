@@ -5,6 +5,8 @@ import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.hamcrest.TypeSafeMatcher;
 import org.junit.Test;
+import vn.khanhpdt.playgrounds.algorithms.graphs.mst.KruskalMST;
+import vn.khanhpdt.playgrounds.algorithms.graphs.mst.PrimMST;
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.graphs.GraphEdge;
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;

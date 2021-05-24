@@ -1,4 +1,4 @@
-package vn.khanhpdt.playgrounds.algorithms.graphs;
+package vn.khanhpdt.playgrounds.algorithms.graphs.mst;
 
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.graphs.GraphEdge;
@@ -25,6 +25,6 @@ public abstract class MinimumSpanningTree<K, V> {
 		return graph;
 	}
 
-	protected abstract List<GraphEdge<K, V>> get();
+	public abstract List<GraphEdge<K, V>> get();
 
 }

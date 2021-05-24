@@ -1,4 +1,4 @@
-package vn.khanhpdt.playgrounds.algorithms.graphs;
+package vn.khanhpdt.playgrounds.algorithms.graphs.path;
 
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.graphs.GraphEdge;

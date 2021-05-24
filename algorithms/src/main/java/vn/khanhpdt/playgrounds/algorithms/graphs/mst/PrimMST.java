@@ -1,4 +1,4 @@
-package vn.khanhpdt.playgrounds.algorithms.graphs;
+package vn.khanhpdt.playgrounds.algorithms.graphs.mst;
 
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.graphs.GraphEdge;
@@ -15,7 +15,7 @@ public class PrimMST<K, V> extends MinimumSpanningTree<K, V> {
 	}
 
 	@Override
-	protected List<GraphEdge<K, V>> get() {
+	public List<GraphEdge<K, V>> get() {
 		// the value of each vertex will represent the minimum weight among the edges connecting the vertex
 		// to the vertices already in the MST
 		getGraph().getVertices().forEach(v -> v.setMinWeightToMST(Double.MAX_VALUE));

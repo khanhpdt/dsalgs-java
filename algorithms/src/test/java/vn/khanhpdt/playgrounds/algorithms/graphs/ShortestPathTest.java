@@ -5,6 +5,9 @@ import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.hamcrest.core.IsEqual;
 import org.junit.Test;
+import vn.khanhpdt.playgrounds.algorithms.graphs.path.BellmanFordShortestPath;
+import vn.khanhpdt.playgrounds.algorithms.graphs.path.DAGShortestPath;
+import vn.khanhpdt.playgrounds.algorithms.graphs.path.DijkstraShortestPath;
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 

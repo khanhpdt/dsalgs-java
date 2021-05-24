@@ -1,6 +1,9 @@
 package vn.khanhpdt.playgrounds.algorithms.graphs;
 
 import org.junit.Test;
+import vn.khanhpdt.playgrounds.algorithms.graphs.search.BreadthFirstSearch;
+import vn.khanhpdt.playgrounds.algorithms.graphs.search.DepthFirstSearchIterative;
+import vn.khanhpdt.playgrounds.algorithms.graphs.search.DepthFirstSearchRecursive;
 import vn.khanhpdt.playgrounds.datastructures.graphs.Graph;
 
 import java.awt.*;

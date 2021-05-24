@@ -1,4 +1,4 @@
-package vn.khanhpdt.playgrounds.algorithms.graphs;
+package vn.khanhpdt.playgrounds.algorithms.graphs.search;
 
 import vn.khanhpdt.playgrounds.datastructures.nodes.GraphVertex;
 
