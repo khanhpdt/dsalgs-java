@@ -71,104 +71,25 @@ class SortingAndSearchingSolutions {
 	}
 
 	/**
-	 * Problem 11.2
-	 */
-	static List<List<String>> clusterAnagrams(List<String> strings) {
-		Map<Integer, List<String>> stringBySumCharacters = new HashMap<>();
-		strings.forEach(s -> {
-			int sum = calculateSumCharacters(s);
-			stringBySumCharacters.putIfAbsent(sum, new ArrayList<>());
-			stringBySumCharacters.get(sum).add(s);
-		});
-
-		List<List<String>> result = new ArrayList<>();
-		for (List<String> stringList : stringBySumCharacters.values()) {
-			result.addAll(groupAnagrams(stringList));
-		}
-
-		return result;
-	}
-
-	private static List<List<String>> groupAnagrams(List<String> strings) {
-		List<List<String>> result = new ArrayList<>();
-		int nStringsLeft = strings.size();
-		while (nStringsLeft > 0) {
-			result.add(new ArrayList<>());
-			List<String> currentSet = result.get(result.size() - 1);
-
-			// get a string to find its anagrams
-			for (int i = 0; i < strings.size(); i++) {
-				if (strings.get(i) != null) {
-					currentSet.add(strings.get(i));
-					strings.set(i, null);
-					nStringsLeft--;
-					break;
-				}
-			}
-
-			String currentString = currentSet.get(0);
-
-			// move all anagrams to be next to each other
-			for (int i = 0; i < strings.size(); i++) {
-				if (strings.get(i) != null && isAnagram(currentString, strings.get(i))) {
-					currentSet.add(strings.get(i));
-					strings.set(i, null);
-					nStringsLeft--;
-				}
-			}
-		}
-
-		return result;
-	}
-
-	private static boolean isAnagram(String s1, String s2) {
-		if (s1.length() != s2.length()) {
-			return false;
-		}
-
-		Map<Character, Integer> charCounts = new HashMap<>();
-		for (char c : s1.toCharArray()) {
-			charCounts.putIfAbsent(c, 0);
-			charCounts.replace(c, charCounts.get(c) + 1);
-		}
-
-		for (char c : s2.toCharArray()) {
-			if (!charCounts.containsKey(c) || charCounts.get(c) == 0) {
-				return false;
-			} else {
-				charCounts.replace(c, charCounts.get(c) - 1);
-			}
-		}
-
-		return true;
-	}
-
-	private static int calculateSumCharacters(String s) {
-		int result = 0;
-		for (char c : s.toCharArray()) {
-			result += c;
-		}
-		return result;
-	}
-
-	/**
-	 * Problem 11.2
-	 * <p>Solution 2: Use sorted anagram as a key.</p>
+	 * Problem 11.2: Write a method to sort an array ot strings so that all tne anagrams are next to
+	 * each other.
+	 * Two strings are anagrams if they contain the same characters and the number of those characters.
+	 *
+	 * <p>Solution 2: Use sorted anagram as a key. This actually uses the idea from bucket sort.</p>
 	 */
 	static List<List<String>> clusterAnagrams_2(List<String> strings) {
-		Map<String, List<String>> anagrams = new HashMap<>();
+		Map<String, List<String>> sortedStrings = new HashMap<>();
 		strings.forEach(s -> {
 			char[] sortedChars = s.toCharArray();
 			Arrays.sort(sortedChars);
+			String sortedString = String.valueOf(sortedChars);
 
-			String key = String.valueOf(sortedChars);
-			anagrams.putIfAbsent(key, new ArrayList<>());
-			anagrams.get(key).add(s);
+			sortedStrings.putIfAbsent(sortedString, new ArrayList<>());
+			sortedStrings.get(sortedString).add(s);
 		});
 
-		return new ArrayList<>(anagrams.values());
+		return new ArrayList<>(sortedStrings.values());
 	}
-
 
 	/**
 	 * Problem 11.3
