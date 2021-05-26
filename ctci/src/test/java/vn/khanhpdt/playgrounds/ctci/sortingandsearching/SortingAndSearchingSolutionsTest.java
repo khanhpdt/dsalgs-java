@@ -2,7 +2,6 @@ package vn.khanhpdt.playgrounds.ctci.sortingandsearching;
 
 import org.hamcrest.Matchers;
 import org.junit.Test;
-import vn.khanhpdt.playgrounds.ctci.sortingandsearching.SortingAndSearchingSolutions;
 
 import java.util.Arrays;
 import java.util.List;
@@ -37,19 +36,6 @@ public class SortingAndSearchingSolutionsTest {
 
 		SortingAndSearchingSolutions.mergeSortedArrays_2(a, b);
 		assertTrue(Arrays.equals(a, new int[]{0, 1, 2, 3, 3, 4, 4, 5, 6, 7, 7, 8, 9, 10, 11, 12, 21, 25, 34, 100}));
-	}
-
-	@Test
-	public void testGroupAnagrams() {
-		List<String> s = Arrays.asList("1357", "2464", "123", "7531", "873193", "231", "6424", "2664");
-
-		List<List<String>> result = SortingAndSearchingSolutions.clusterAnagrams(s);
-
-		assertThat(result, Matchers.hasItem(Matchers.containsInAnyOrder("1357", "7531")));
-		assertThat(result, Matchers.hasItem(Matchers.containsInAnyOrder("2464", "6424")));
-		assertThat(result, Matchers.hasItem(Matchers.containsInAnyOrder("123", "231")));
-		assertThat(result, Matchers.hasItem(Matchers.containsInAnyOrder("873193")));
-		assertThat(result, Matchers.hasItem(Matchers.containsInAnyOrder("2664")));
 	}
 
 	@Test
