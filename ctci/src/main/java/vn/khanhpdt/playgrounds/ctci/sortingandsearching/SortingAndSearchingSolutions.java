@@ -249,7 +249,8 @@ class SortingAndSearchingSolutions {
     }
 
     /**
-     * Problem 11.6
+     * Problem 11.6: Given an M x N matrix in which each row and each column is sorted in
+     * ascending order, write a method to find an element.
      *
      * @param matrix a matrix whose columns and rows are sorted in ascending order
      */
@@ -286,7 +287,7 @@ class SortingAndSearchingSolutions {
                 indexes = findInSortedMatrix(n, matrix, rowFrom, middleRow - 1, colFrom, middleCol);
             }
         }
-        // search in these areas in both cases (less and greater than), because we cannot know know their relationships
+        // search in these areas in both cases (less and greater than), because we cannot know their relationships
         // with matrix[middleRow][middleCol]
         if (indexes == null) {
             // upper right
