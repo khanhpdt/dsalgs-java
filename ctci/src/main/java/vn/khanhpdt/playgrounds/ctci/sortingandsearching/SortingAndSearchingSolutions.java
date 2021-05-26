@@ -156,7 +156,49 @@ class SortingAndSearchingSolutions {
      * O(log(N)) solution.
      */
     static int findInRotatedArray_2(int[] numbers, int n) {
-        return 0;
+        return findInRotatedArray_2(numbers, n, 0, numbers.length - 1);
+    }
+
+    static int findInRotatedArray_2(int[] numbers, int n, int from, int to) {
+        if (from > to) return -1;
+
+        if (from == to) {
+            if (n != numbers[from]) return -1;
+            return from;
+        }
+
+        var mid = (from + to) / 2;
+
+        if (numbers[mid] == n) return mid;
+
+        // the left half must be in increasing order
+        // e.g., [4, 5, 6, 7, 8 (mid), 9, 1, 2, 3]
+        if (numbers[mid] > numbers[from]) {
+            if (n >= numbers[from] && n < numbers[mid]) return findInRotatedArray_2(numbers, n, from, mid - 1);
+            return findInRotatedArray_2(numbers, n, mid + 1, to);
+        }
+
+        // the right half must be in increasing order (it's impossible otherwise)
+        // e.g., [7, 8, 9, 1, 2 (mid), 3, 4, 5, 6]
+        if (numbers[mid] < numbers[from]) {
+            if (n > numbers[mid] && n <= numbers[to]) return findInRotatedArray_2(numbers, n, mid + 1, to);
+            return findInRotatedArray_2(numbers, n, from, mid - 1);
+        }
+
+        // numbers[mid] == numbers[from]
+
+        // special case. e.g., [3, 3, 3, 4, 3], [3, 2, 3, 3, 3], [3, 3, 3, 2, 3]
+        // we must search both size, b/c we cannot know which half n can be (see the examples above)
+        if (numbers[mid] == numbers[to]) {
+            var fromLeft = findInRotatedArray_2(numbers, n, from + 1, mid - 1);
+            if (fromLeft == -1) {
+                return findInRotatedArray_2(numbers, n, mid + 1, to - 1);
+            }
+            return fromLeft;
+        }
+
+        // e.g., [3, 3, 3, 4, 5], [3, 3, 3, 1, 2]
+        return findInRotatedArray_2(numbers, n, mid + 1, to);
     }
 
     /**

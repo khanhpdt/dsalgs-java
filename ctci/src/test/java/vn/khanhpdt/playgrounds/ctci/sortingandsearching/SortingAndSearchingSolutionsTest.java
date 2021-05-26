@@ -60,6 +60,14 @@ public class SortingAndSearchingSolutionsTest {
 	}
 
 	@Test
+	public void testFindInRotatedArray2() {
+		int[] ints = new int[]{15, 16, 20, 25, 1, 3, 4, 5, 7, 10, 14};
+		assertThat(SortingAndSearchingSolutions.findInRotatedArray_2(ints, 5), is(7));
+		assertThat(SortingAndSearchingSolutions.findInRotatedArray_2(ints, 15), is(0));
+		assertThat(SortingAndSearchingSolutions.findInRotatedArray_2(ints, 14), is(10));
+	}
+
+	@Test
 	public void testFindInInterspersedArray() {
 		String[] strings = new String[]{"at", "", "", "", "ball", "", "", "car", "", "", "dad", "", ""};
 		assertThat(SortingAndSearchingSolutions.findInInterspersedArray(strings, "at"), is(0));
