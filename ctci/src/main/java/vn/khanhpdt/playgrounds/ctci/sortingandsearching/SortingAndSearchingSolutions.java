@@ -5,7 +5,9 @@ import java.util.*;
 class SortingAndSearchingSolutions {
 
 	/**
-	 * Problem 11.1
+	 * Problem 11.1: You are given two sorted arrays, A and B, where A has a large enough buffer at the
+	 * end to hold B. Write a method to merge B into A in sorted order.
+	 *
 	 * @param a sorted array, has enough empty spaces at the end to store b
 	 * @param b sorted array
 	 */
@@ -71,8 +73,7 @@ class SortingAndSearchingSolutions {
 	}
 
 	/**
-	 * Problem 11.2: Write a method to sort an array ot strings so that all tne anagrams are next to
-	 * each other.
+	 * Problem 11.2: Write a method to sort an array ot strings so that all the anagrams are next to each other.
 	 * Two strings are anagrams if they contain the same characters and the number of those characters.
 	 *
 	 * <p>Solution 2: Use sorted anagram as a key. This actually uses the idea from bucket sort.</p>
@@ -92,7 +93,9 @@ class SortingAndSearchingSolutions {
 	}
 
 	/**
-	 * Problem 11.3
+	 * Problem 11.3: Given a sorted array of n integers that has been rotated an unknown
+	 * number of times, write code to find an element in the array. You may assume that the array was
+	 * originally sorted in increasing order.
 	 *
 	 * @param numbers a rotated of a sorted array
 	 */
