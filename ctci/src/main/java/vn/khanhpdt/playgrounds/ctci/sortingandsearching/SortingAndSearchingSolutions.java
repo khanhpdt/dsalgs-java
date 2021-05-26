@@ -100,16 +100,18 @@ class SortingAndSearchingSolutions {
 	 * @param numbers a rotated of a sorted array
 	 */
 	static int findInRotatedArray(int[] numbers, int n) {
-		int indexSmallest = -1;
+		int indexOfSmallestItem = -1;
 		int i = 0;
-		while (indexSmallest == -1 && i < numbers.length - 1) {
+
+		// O(N), where N is the length of numbers
+		while (indexOfSmallestItem == -1 && i < numbers.length - 1) {
 			// micro optimization: exploit the search for the smallest number to find the given number
 			if (numbers[i] == n) {
 				return i;
 			}
 
 			if (numbers[i] > numbers[i + 1]) {
-				indexSmallest = i + 1;
+				indexOfSmallestItem = i + 1;
 			}
 
 			i++;
@@ -117,14 +119,19 @@ class SortingAndSearchingSolutions {
 
 		// because indexSmallest == -1 here means no rotation, meaning that the given number must have been found
 		// in the loop if it is in the array.
-		if (indexSmallest == -1) {
+		if (indexOfSmallestItem == -1) {
 			throw new IllegalArgumentException(n + " not found.");
 		}
 
-		if (n > numbers[0]) {
-			return binarySearch(n, numbers, 0, indexSmallest - 1);
+		// the array is structured like this:
+		// [the rotated part (all items in this part >= the items in other parts), the smallest item, the part not rotated]
+
+		if (n >= numbers[0]) {
+			// n must be in the rotated part
+			return binarySearch(n, numbers, 0, indexOfSmallestItem - 1);
 		} else {
-			return binarySearch(n, numbers, indexSmallest, numbers.length - 1);
+			// n must in the not rotated part
+			return binarySearch(n, numbers, indexOfSmallestItem, numbers.length - 1);
 		}
 	}
 
@@ -145,7 +152,8 @@ class SortingAndSearchingSolutions {
 	}
 
 	/**
-	 * Problem 11.5
+	 * Problem 11.5: Given a sorted array of strings that is interspersed with empty strings, write a
+	 * method to find the location of a given string.
 	 *
 	 * @param strings a sorted string array interspersed with empty strings
 	 */
